@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<body>
+    
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            align-items: center;
+            margin: auto;
+        }
+        input, select{
+            margin-bottom: 15px;
+            width: 80%;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        #limpar, #enviar{
+            width: 20%;
+        }
+        form{
+            width: 80%;
+            margin: auto;
+        }
+        p{
+            margin-top: -20px;
+        }
+        div{
+            align-items: flex-start;
+        }
+    </style>
+
+    <div>
+        <h1>Cadastro de Produtos</h1>
+        <p>_________________________________________________________________________________</p>
+    </div>
+    <form action=" https://autoriaform.herokuapp.com/" method="post">
+        <label for="SKU">SKU:</label> <br>
+        <input type="text" name="SKU" id="SKU"> <br>
+        <label for="produto">Produto:</label><br>
+        <input type="text" name="produto" id="produto"><br>
+        <label for="peso">Peso:</label><br>
+        <input type="number" name="peso" id="peso"><br>
+        <label for="unidade">Unidade</label><br>
+        <select name="unidade" id="unidade">
+            <option value="kg">quilograma (kg)</option>
+            <option value="g">grama (g)</option>
+            <option value="t">tonelada (t)</option>
+        </select><br>
+        <label for="largura">Largura (cm):</label><br>
+        <input type="number" name="largura" id="largura"><br>
+        <label for="altura">Altura (cm):</label><br>
+        <input type="number" name="altura" id="altura"><br>
+        <label for="profundidade">Profundidade (cm):</label><br>
+        <input type="number" name="profundidade" id="profundidade"><br>
+        <label for="enviar"></label>
+        <input type="submit" name="enviar" id="enviar">
+        <label for="limpar"></label>
+        <input type="reset" name="limpar" id="limpar">
+    </form>
+</body>
+</html>

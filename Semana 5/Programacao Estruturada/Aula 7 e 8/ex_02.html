@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+  </head>
+  <body>
+    <p id="resultado"></p>
+    <script>
+      var hoje = new Date().toString();
+      var data = hoje.toString();
+      var dia = data.slice(8, 10);
+      var mes = data.slice(4, 7);
+      var ano = data.slice(11, 15);
+      var hora = data.slice(16, 18);
+      var minuto = data.slice(19, 21);
+      var newFullDate = "Data: " + dia + " de " + mes + " de " + ano;
+      var newFullClock = "Hora: " + hora + "h" + minuto;
+      document.getElementById("resultado").innerHTML = newFullDate + "<br>" + newFullClock;
+      console.log(hoje)
+    </script>
+  </body>
+</html>

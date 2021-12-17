@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Programação Estruturada</title>
+    </head>
+    <body>
+        <button onclick='executarExercicio()'>OK</button>
+        <p id="resultado"></p>
+        <script>
+            function executarExercicio() {
+                var data = new Date();
+                var horario = data.getHours() + ':' + data.getMinutes() + ":" + data.getSeconds()
+                document.getElementById('resultado').innerHTML = horario; 
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento Front-end I</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th rowspan="2">SKU</th>
+            <th rowspan="2">Nome</th>
+            <th rowspan="2">Peso</th>
+            <th rowspan="1" colspan="3">Dimensões Caixa</th>
+        </tr>
+        <tr class="dimensoes centralizar">
+            <td class="centralizar">Altura</td>
+            <td class="centralizar">Largura</td>
+            <td class="centralizar">Profundidade</td>
+        </tr>
+        <tr>
+            <td>VENT-TB-11</td>
+            <td>Ventilador Turbo J11</td>
+            <td>2kg</td>
+            <td class="centralizar">40cm</td>
+            <td class="centralizar">30cm</td>
+            <td class="centralizar">20cm</td>
+        </tr>
+        <tr class="colorir">
+            <td>APPL-IPAD-7-9876</td>
+            <td>Ipad Geração 7</td>
+            <td>700g</td>
+            <td class="centralizar">25cm</td>
+            <td class="centralizar">15cm</td>
+            <td class="centralizar">5cm</td>
+        </tr>
+        <tr>
+            <td>SG-MOTO-G-974</td>
+            <td>Smartphone Motorola G</td>
+            <td>400g</td>
+            <td class="centralizar">18cm</td>
+            <td class="centralizar">8cm</td>
+            <td class="centralizar">3cm</td>
+        </tr>
+        <tr class="colorir">
+            <td>AMZ-EBK-10-9383</td>
+            <td>Leitor Kindle 10 Geração</td>
+            <td>300g</td>
+            <td class="centralizar">17cm</td>
+            <td class="centralizar">8,5cm</td>
+            <td class="centralizar">3,5cm</td>
+        </tr>
+        <tr>
+            <td>JB-PHO-9383</td>
+            <td>Headset Gamer JBL Quantum 100</td>
+            <td>480g</td>
+            <td class="centralizar">25cm</td>
+            <td class="centralizar">17cm</td>
+            <td class="centralizar">15cm</td>
+        </tr>
+        <tr class="colorir">
+            <td>HP-DJ-9867-2020</td>
+            <td>Impressora HP Deskjet 2982</td>
+            <td>3 kg</td>
+            <td class="centralizar">50cm</td>
+            <td class="centralizar">40cm</td>
+            <td class="centralizar">45cm</td>
+        </tr>
+    </table>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 5px;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        th, .dimensoes{
+            background-color: rgba(47, 154, 216, 0.808);
+            color: white;
+            font-weight: normal;
+        }
+        .centralizar{
+            text-align: center;
+        }
+        .colorir{
+            background-color: rgba(128, 128, 128, 0.329);
+        }
+    </style>
+</body>
+</html>

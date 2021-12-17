@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Programação Estruturada</title>
+    </head>
+    <body>
+        <h1>Entrada do Programa</h1>
+        Entrada a: <input type="date" id="a" value=""><br />
+        <button onclick='executarExercicio()'>OK</button>
+        <p id="resultado"></p>
+        <script>
+            function executarExercicio() {
+                var data = new Date(document.getElementById('a').value);
+                var dia = data.getDay();
+                var dia_da_seman = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                document.getElementById('resultado').innerHTML = dia_da_seman[dia + 1];
+            }
+        </script>
+    </body>
+</html>
