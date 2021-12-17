@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Estruturada</title>
+</head>
+<body>
+    <h1>Exercício 6</h1>
+    <input id="numero" type="number">
+    <button onclick="ultimo()">Clique aqui</button><br>
+    <a href="/index.html">Index</a> 
+    <script>
+        function ultimo(){
+            var numero = parseFloat(document.getElementById("numero").value);
+            var ultimo_digito = numero%10;
+            alert(ultimo_digito);
+
+            //limpar o número digitado
+            document.getElementById("numero").value = "";
+        }
+    </script>
+</body>
+</html>
