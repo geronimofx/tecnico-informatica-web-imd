@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Programação Estruturada</title>
+    </head>
+    <body>
+        <h1>Entrada do Programa</h1>
+        N1: <input type="number" id="a" value=""><br />
+        N2: <input type="number" id="b" value=""><br />
+        <button onclick='executarExercicio()'>OK</button>
+        <p id="resultado"></p>
+        <script>
+            function executarExercicio() {
+                var N1 = Number(document.getElementById('a').value);
+                var N2 = Number(document.getElementById('b').value);
+                var somaParesN1 = 0;
+                var somaParesN2 = 0;
+                var somaImparesN1 = 0;
+                var somaImparesN2 = 0;
+
+                for (var i = 0; i <= N1; i++){
+                    if(i%2 == 0){
+                        somaParesN1 = somaParesN1 = i;
+                    }else{
+                        somaImparesN1 = somaImparesN1 + i;
+                    }
+                }
+
+                for(var j = 0; j <= N2; j++){
+                    if(j%2 == 0){
+                        somaParesN2 = somaParesN2 + j;
+                    }else{
+                        somaImparesN2 = somaImparesN2 + j;
+                    }
+                }
+
+                var somaTotalPares = somaParesN1 + somaParesN2;
+                var somaTotalImpares = somaImparesN1 = somaImparesN2;
+
+                document.getElementById('resultado').innerHTML = "Soma dos números pares: " + 
+                somaTotalPares + "<br>" + "Soma dos números ímpares: " + somaTotalImpares;
+            }
+        </script>
+    </body>
+</html>

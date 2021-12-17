@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Programação Estruturada</title>
+    </head>
+    <body>
+        <h1>Entrada do Programa</h1>
+        N1: <input type="number" id="a" value=""><br />
+        N2: <input type="number" id="b" value=""><br />
+        <button onclick='executarExercicio()'>OK</button>
+        <p id="resultado"></p>
+        <script>
+            function executarExercicio() {
+                var a = Number(document.getElementById('a').value); 
+                var b = Number(document.getElementById('b').value); 
+                var pares = 0;
+                var impares = 0;
+                var i = a;
+                while (i <= b) {
+                    if (i % 2 == 0) {
+                        pares = pares + i;
+                    } else {
+                        impares = impares + i;
+                    }
+                    i++;
+                }
+                var texto = "Soma dos números pares: " + pares + "<br>" + "Soma dos números ímpares: " + impares;
+                document.getElementById('resultado').innerHTML = texto;
+            }
+        </script>
+    </body>
+</html>
