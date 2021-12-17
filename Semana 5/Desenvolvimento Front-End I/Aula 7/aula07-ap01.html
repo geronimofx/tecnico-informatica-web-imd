@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07</title>
+
+    <style>
+
+        div {
+            width: 80%;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input, select {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid gray;
+            margin-bottom: 15px;
+        }
+
+        input[type=submit], input[type=reset]{
+            box-sizing: border-box;
+            width: 20%;
+        }
+
+        hr {
+            margin-bottom: 50px;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <div>
+        <h1>Cadastro de produtos</h1>
+        <hr>
+    </div>
+
+    <div>
+        <form action="https://autoria-form.herokuapp.com/ ">
+            <div>
+                <label for="sku">SKU:</label>
+                <input name="sku" id="sku" type="text">
+
+                <label for="produto">Produto:</label>
+                <input type="text" name="produto" id="produto">
+            </div>
+            <div>
+                <label for="peso">Peso:</label>
+                <input type="number" name="peso" id="peso">
+            
+                <label for="unidade">Unidade:</label>
+                <select name="unidade" id="unidade">
+                    <option value="kg">quilograma (kg)</option>
+                    <option value="g">grama (g)</option>
+                    <option value="t">tonelada (t)</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="largura">Largura (cm):</label>
+                <input type="number" name="largura" id="largura">
+            
+                <label for="altura">Altura (cm):</label>
+                <input type="number" name="altura" id="altura">
+            
+                <label for="profundidade">Profundidade (cm):</label>
+                <input type="number" name="profundidade" id="profundidade">
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
