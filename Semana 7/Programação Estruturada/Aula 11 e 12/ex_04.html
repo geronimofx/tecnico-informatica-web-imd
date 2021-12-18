@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+<body>
+    <h1>Entrada do Programa</h1>
+    <button onclick='executarExercicio()'>OK</button>
+    <p id="resultado"></p>
+    <script>
+        function executarExercicio() {
+            var mtz = [[], [], [], [], [], [], [], [], [], []]; 
+            var n = -1;
+            var soma = 0;
+            var r = "";
+            // Estrutura para receber e armazenar os dados da matriz //para i de 0 ate 9 faça
+            for (i = 0; i < 10; i++) {
+                for (j = 0; j < 5; j++) {
+                    n = Number(prompt("Digite um número para a posição (" + (i + 1) + "," + (j + 1) + "):")); //escreva "Digite um número para a posição ({i+1},{j+1})"
+                    mtz[i][j] = n;
+                }
+            }
+            n = Number(prompt("Qual coluna deseja somar?"));
+            for (i = 0; i < 10; i++) {
+                soma = soma + mtz[i][n];
+            }
+            r = "A soma dos elementos é " + soma;
+            document.getElementById('resultado').innerHTML = r;
+        }
+    </script>
+</body>
+</html>

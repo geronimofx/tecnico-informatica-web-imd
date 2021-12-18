@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    margin: 0;
+    background-color:aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    background-color: white;
+    width: 1080px;
+    margin: auto;
+}
+
+a:link{
+    text-decoration: none;
+    color: #EEE;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header{
+    padding: 0px;
+    background-color: rgb(50, 50, 50);
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+nav > .menu{
+    list-style: none;
+    padding: 16px;
+    margin: 0px;
+
+}
+
+nav > .menu > li{
+    display: inline;
+    padding: 16px;
+}
+
+nav{
+    background-color: rgb(50, 50, 50);
+    margin: 0px;
+    position: sticky;
+    top: 5px;
+}
+
+#destaque{
+    height: 607.86px;
+    margin: 0px;
+}
+
+footer{
+    background-color: rgb(50, 50, 50);
+    padding: 16px;
+    text-align: center;
+}

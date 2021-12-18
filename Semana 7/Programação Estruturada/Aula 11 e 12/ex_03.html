@@ -1,0 +1,62 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+<body>
+    <h1>Entrada do Programa</h1>
+    <button onclick='executarExercicio()'>OK</button>
+    <p id="resultado"></p>
+    <script>
+        function executarExercicio() {
+            var v = [];
+            var numero = -1;
+            var qtdNumero = 0;
+            while(numero !=0){
+                numero = Number(prompt("Informe um número:"))
+                if (numero !=0){
+                    v[qtdNumero] = numero;
+                    qtdNumero = qtdNumero + 1;
+                }
+            }
+
+            v_copy = [];
+            for (i=0; i < v.length; i++){
+                v_copy[i] = v[i];
+            }
+            v_copy.sort(comparar);
+
+            var anterior;
+            var atual;
+            var contador_atual = 1;
+            var contador_maximo = 0;
+            var numero_maximo;
+
+            for (i=0; i < qtdNumero; i++){
+                atual = v_copy[i];
+                if (atual == anterior){
+                    contador_atual++;
+                }else {
+                    contador_atual = 1;
+                }
+
+                if (contador_atual > contador_maximo){
+                    numero_maximo = atual;
+                    contador_maximo = contador_atual;
+                }
+
+                anterior = atual;
+            }
+
+
+            var r = "No array [" + v + "] o número " + numero_maximo + " foi repetido " + contador_maximo + " vezes";
+
+            document.getElementById('resultado').innerHTML = r;
+        }
+
+        function comparar (a,b){
+            return a-b;
+        }
+    </script>
+</body>
+</html>
