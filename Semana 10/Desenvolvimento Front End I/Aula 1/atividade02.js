@@ -13,5 +13,3 @@ if(delta < 0 || a == 0){
     var x2 = (-b - Math.sqrt(delta)) / (2*a);
     console.log("X2 = " + x2);
 }
-
-// console.log(process.argv);
