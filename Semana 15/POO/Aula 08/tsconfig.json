@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        // versão do JS
+        "target": "es5",
+        // caminho da pasta da transpilação
+        "outDir": "app/js",
+        // setado como "true" impede a criação do arquivo js caso o arquivo ts esteja com algum erro
+        "noEmitOnError": true,
+        // verifica se alguma variável pode receber valor null sem que temos controle sobre isso
+        "strictNullChecks": true
+    },
+
+    // caminho para o compilador pegar o arquivo ts e transpilar
+    "include": [
+        "app/ts/**/*"
+    ]
+
+}
