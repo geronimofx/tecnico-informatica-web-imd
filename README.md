@@ -3,7 +3,7 @@ Repositório criado para guardar as atividades semanais do modulo intermediário
 
 O nível intermediário foi dividido em:
 -  [Módulo 1:](#módulo-1) realizado entre as semanas 01 até 09.
-- [Férias:]() compreendendo as semanas 10 até 12.
+- [Férias:](https://github.com/geronimofx/tecnico-informatica-web-imd) compreendendo as semanas 10 até 12.
 - [Módulo 2:](#módulo-2) realizado entre as semanas 13 até 17.
 
 ## Módulo 1:
